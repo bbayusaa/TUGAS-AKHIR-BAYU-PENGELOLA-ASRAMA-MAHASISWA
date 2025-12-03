@@ -1,0 +1,283 @@
+* { box-sizing: border-box; }
+html { scroll-behavior: smooth; }
+body {
+    font-family: 'Segoe UI', Arial, sans-serif;
+    margin: 0;
+    background: linear-gradient(135deg, #f0f4ff, #e0f7fa);
+    color: #333;
+}
+
+.hero {
+    /* MENGGUNAKAN BIRU UNDIP #0047AB */
+    background: linear-gradient(90deg, #0047AB, #1A52B7); 
+    color: white;
+    padding: 40px 20px;
+    text-align: center;
+}
+.hero h1 { margin: 0; font-size: 2.2em; }
+.hero p { margin: 8px 0 0; font-size: 1.1em; }
+
+.navbar {
+    position: sticky;
+    top: 0;
+    z-index: 50;
+    /* MENGGUNAKAN BIRU UNDIP #0047AB */
+    background: linear-gradient(90deg, #0047AB, #0056D6); 
+    box-shadow: none;
+    border-bottom: none; 
+}
+.navbar ul {
+    list-style: none;
+    display: flex;
+    gap: 8px; 
+    margin: 0;
+    padding: 10px 20px;
+    overflow-x: auto; 
+    justify-content: center; 
+    border-bottom: none;
+}
+.navbar ul li { 
+    margin: 0 4px; 
+    padding: 0; 
+    border-bottom: none; 
+}
+.navbar li a {
+    color: white;
+    text-decoration: none; 
+    font-weight: 600;
+    padding: 8px 14px; 
+    border-radius: 20px; 
+    transition: all 0.3s;
+    display: flex;
+    align-items: center;
+    gap: 6px; 
+    white-space: nowrap; 
+    border: none; 
+    box-shadow: none; 
+}
+.navbar li a:hover {
+    /* Warna hover navbar menggunakan varian Biru UNDIP */
+    background: #0056D6;
+    transform: translateY(-2px); 
+    box-shadow: 0 0 10px rgba(255, 255, 255, 0.3);
+}
+.navbar ul::-webkit-scrollbar { display: none; }
+
+/* PENTING: Layout Halaman Tunggal */
+.grid-page {
+    display: block; 
+    padding: 20px;
+    max-width: 900px; /* Lebar maksimum halaman */
+    margin: 0 auto; /* Tengahkankan konten */
+}
+
+.grid { 
+    display: block; 
+    padding: 20px;
+}
+@media (max-width: 768px) { .grid { grid-template-columns: 1fr; } }
+
+
+.card {
+    background: white;
+    border-radius: 12px;
+    box-shadow: 0 6px 15px rgba(0, 0, 0, 0.1);
+    padding: 20px;
+    border: none;
+    margin-bottom: 20px; 
+}
+.card.highlight { border: none; }
+
+h2 { 
+    /* PENGATURAN FLEXBOX UNTUK JUDUL AGAR SEJAJAR HORIZONTAL */
+    display: flex; 
+    align-items: center; 
+    gap: 10px; 
+    white-space: nowrap; 
+
+    /* Warna Judul Card (Biru UNDIP) */
+    color: #0047AB; 
+    margin: 0; 
+    padding-bottom: 8px;
+    border-bottom: 2px solid #eee;
+    overflow: hidden; 
+}
+h3 { margin: 15px 0 6px; color: #4b5563; }
+
+.filter-controls {
+    display: flex;
+    gap: 20px;
+    margin-bottom: 15px;
+    padding: 10px;
+    border: 1px solid #e0e0e0;
+    border-radius: 8px;
+    background-color: #f9f9f9;
+}
+.filter-controls label {
+    display: flex;
+    flex-direction: column;
+    font-weight: 500;
+    flex: 1;
+    min-width: 120px;
+}
+.filter-controls select { padding: 8px; border-radius: 6px; border: 1px solid #ccc; margin-top: 4px; }
+
+label { 
+    display: block; 
+    margin: 12px 0 4px;
+    font-weight: 500;
+    color: #444;
+}
+input[type="text"], input[type="number"], input[type="date"], input[type="tel"], select {
+    width: 100%;
+    padding: 10px 12px;
+    border: 1px solid #ccc;
+    border-radius: 8px;
+    background: #fff;
+    transition: border-color 0.3s;
+}
+input:focus, select:focus {
+    /* Warna Border saat Input Fokus (Biru UNDIP) */
+    border-color: #0047AB;
+    box-shadow: 0 0 0 2px rgba(0, 71, 171, 0.2); 
+    outline: none;
+}
+
+ul, ol {
+    list-style-type: none;
+    padding-left: 0;
+    margin-top: 10px;
+}
+/* Styling list untuk halaman home (tidak dipakai di halaman aktif/antrian/riwayat) */
+li {
+    margin-bottom: 8px;
+    padding: 12px;
+    line-height: 1.5;
+    border-bottom: 1px solid #eee; 
+}
+li > div:first-child { /* Warna Nama Penghuni di list */
+    color: #0047AB !important;
+}
+li:last-child { border-bottom: none; }
+
+/* PENTING: Pengaturan spesifik untuk list kapasitas agar nilainya sejajar */
+#kapasitas ul {
+    padding: 0;
+    margin: 10px 0 0;
+}
+
+#kapasitas li {
+    display: flex;
+    justify-content: space-between; /* Membuat konten sejajar kiri dan kanan */
+    padding: 8px 0; 
+    border-bottom: 1px dashed #e0e0e0; 
+    line-height: 1.2;
+}
+
+.inline { display: inline-block; margin-left: 10px; }
+.btn {
+    padding: 10px 16px;
+    border: none;
+    border-radius: 8px;
+    cursor: pointer;
+    font-weight: 500;
+    transition: all 0.3s;
+}
+/* Tombol Utama (Primary Button) menggunakan Biru UNDIP */
+.btn.primary { background: #0047AB; color: white; }
+.btn.success { background: #10b981; color: white; } 
+.btn.danger { background: #ef4444; color: white; }
+.btn.secondary { background: #6b7280; color: white; }
+.btn.small { padding: 6px 12px; font-size: 0.85em; }
+.btn:hover { transform: translateY(-1px); box-shadow: 0 4px 12px rgba(0,0,0,0.15); }
+
+.status-expired {
+    opacity: 0.6;
+    text-decoration: line-through;
+    color: #dc2626 !important;
+}
+
+.empty { 
+    color: #8795a1; 
+    font-style: italic; 
+    text-align: center;
+    padding: 20px;
+    border: 1px dashed #ddd;
+    border-radius: 8px;
+}
+
+.footer {
+    background: #f3f4f6;
+    padding: 20px;
+    text-align: center;
+    border-top: 1px solid #e5e7eb;
+    margin-top: 20px;
+}
+.footer p.footnote { margin: 10px 0 0; font-size: 0.85em; color: #777; }
+
+/* STYLING TAMBAHAN UNTUK SEMUA TABEL (.data-table) */
+.table-responsive {
+    overflow-x: auto; 
+    margin-top: 15px;
+}
+
+.data-table {
+    width: 100%;
+    border-collapse: collapse;
+    font-size: 0.9em;
+    min-width: 700px; /* Lebar minimum untuk tabel agar tidak terlalu sempit di perangkat kecil */
+}
+
+.data-table th, .data-table td {
+    padding: 10px 8px;
+    text-align: left;
+    vertical-align: middle;
+}
+
+.data-table thead th {
+    background-color: #f3f4f6;
+    border-bottom: 2px solid #e5e7eb;
+    color: #4b5563;
+    font-weight: 600;
+}
+
+.data-table tbody tr {
+    border-bottom: 1px solid #eee;
+    transition: background-color 0.2s;
+}
+
+.data-table tbody tr:hover {
+    background-color: #fafafa;
+}
+
+.data-table tbody tr:last-child {
+    border-bottom: none;
+}
+
+/* Styling Khusus untuk Tabel Kapasitas (Kamar Tersedia) */
+.capacity-table {
+    min-width: 100%; 
+    margin-bottom: 15px;
+}
+
+.capacity-table td:first-child {
+    font-weight: bold;
+    color: #4b5563;
+}
+
+/* Penyesuaian kolom Aksi */
+.action-cell {
+    white-space: nowrap;
+    width: 1%;
+    text-align: right;
+}
+
+.action-cell form.inline {
+    margin-left: 5px !important;
+}
+
+/* Membuat tombol aksi lebih ringkas di tabel */
+.data-table .btn.small {
+    padding: 4px 8px;
+    font-size: 0.75em;
+}

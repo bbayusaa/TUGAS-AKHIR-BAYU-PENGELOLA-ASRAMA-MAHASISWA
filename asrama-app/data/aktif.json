@@ -1,0 +1,62 @@
+[
+    {
+        "nama1": "Leo",
+        "nama2": "Boh",
+        "no_wa1": "08293829392",
+        "no_wa2": "08261838238",
+        "kamar": "Double",
+        "lantai": 1,
+        "tanggal_mulai": "2025-12-02",
+        "tanggal_berakhir": "2026-01-02",
+        "lama_bulan": 1,
+        "biaya_total": 1000000
+    },
+    {
+        "nama1": "Leo",
+        "nama2": null,
+        "no_wa1": "0872738282",
+        "no_wa2": null,
+        "kamar": "Single",
+        "lantai": 1,
+        "tanggal_mulai": "2025-12-10",
+        "tanggal_berakhir": "2026-05-10",
+        "lama_bulan": 5,
+        "biaya_total": 3750000
+    },
+    {
+        "nama1": "Jon",
+        "nama2": "Galih",
+        "no_wa1": "08274827382",
+        "no_wa2": "0827381739",
+        "kamar": "Double",
+        "lantai": 1,
+        "tanggal_mulai": "2025-12-05",
+        "tanggal_berakhir": "2026-03-05",
+        "lama_bulan": 3,
+        "biaya_total": 3000000
+    },
+    {
+        "nama1": "re",
+        "nama2": "re",
+        "no_wa1": "4323",
+        "no_wa2": "45353",
+        "kamar": "Double",
+        "lantai": 2,
+        "tanggal_mulai": "2025-12-03",
+        "tanggal_berakhir": "2026-03-03",
+        "lama_bulan": 3,
+        "biaya_total": 3000000
+    },
+    {
+        "nama1": "re",
+        "nama2": "gf",
+        "no_wa1": "65564",
+        "no_wa2": "564654",
+        "kamar": "Double",
+        "lantai": 2,
+        "tanggal_mulai": "2025-12-03",
+        "tanggal_berakhir": "2026-03-03",
+        "lama_bulan": 3,
+        "biaya_total": 3000000
+    }
+]

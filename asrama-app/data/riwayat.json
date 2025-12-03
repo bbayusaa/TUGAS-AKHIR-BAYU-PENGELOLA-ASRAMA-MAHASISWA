@@ -1,0 +1,38 @@
+[
+    {
+        "nama1": "Bayu",
+        "nama2": "Dika",
+        "no_wa1": "082224224848",
+        "no_wa2": "087487823932",
+        "kamar": "Double",
+        "lantai": 1,
+        "tanggal_mulai": "2025-12-04",
+        "tanggal_berakhir": "2026-01-04",
+        "lama_bulan": 1,
+        "biaya_total": 1000000
+    },
+    {
+        "nama1": "Rafi",
+        "nama2": null,
+        "no_wa1": "08224284822",
+        "no_wa2": null,
+        "kamar": "Single",
+        "lantai": 2,
+        "tanggal_mulai": "2025-12-04",
+        "tanggal_berakhir": "2026-05-04",
+        "lama_bulan": 5,
+        "biaya_total": 3750000
+    },
+    {
+        "nama1": "Yusuf",
+        "nama2": null,
+        "no_wa1": "082738273",
+        "no_wa2": null,
+        "kamar": "Single",
+        "lantai": 3,
+        "tanggal_mulai": "2025-12-05",
+        "tanggal_berakhir": "2026-06-05",
+        "lama_bulan": 6,
+        "biaya_total": 4500000
+    }
+]
