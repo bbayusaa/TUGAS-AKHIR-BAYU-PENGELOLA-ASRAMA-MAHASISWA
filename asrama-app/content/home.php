@@ -7,5 +7,6 @@
         <li>👥 Penghuni Aktif: Lihat, perpanjang, atau keluarkan penghuni yang sedang menyewa.</li>
         <li>📜 Riwayat: Lihat arsip data penghuni lama.</li>
     </ul>
-    <p>Sistem ini menjalankan pemeliharaan data otomatis (Auto Check Expired) setiap kali diakses.</p>
+    <p></p>
+
 </section>
